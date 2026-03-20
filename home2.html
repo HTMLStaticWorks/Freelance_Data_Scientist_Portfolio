@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Data Solutions | Alex Data science</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-graph-up-arrow me-2"></i>ALEX.DATA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="bi bi-list text-secondary fs-1"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu border-secondary" aria-labelledby="homeDropdown">
+                            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                            <li><a class="dropdown-item" href="home2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <button id="theme-toggle" class="btn btn-link text-secondary p-0" aria-label="Toggle Dark Mode">
+                            <i class="bi bi-moon-stars fs-5"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="login.html" class="btn btn-outline-custom btn-sm py-2 px-3">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Corporate Hero -->
+    <section class="section-padding bg-enterprise-header d-flex align-items-center" style="min-height: 80vh;">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 text-center">
+                    <div class="glass-card-hero animate-fade-up">
+                        <h1 class="display-3 fw-bold mb-4">Enterprise-Grade <br><span class="text-secondary">Data Intelligence</span></h1>
+                        <p class="lead mx-auto mb-5 opacity-90" style="max-width: 700px;">Helping industry leaders leverage predictive analytics to drive global operations and strategic growth with mathematical precision.</p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="contact.html" class="btn-custom btn-primary-custom px-4">Partner With Me</a>
+                            <a href="services.html" class="btn-custom btn-outline-custom px-4 text-white border-white">Our Expertise</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 border-bottom border-secondary bg-section-white">
+        <div class="container">
+            <div class="row align-items-center justify-content-center g-4 row-cols-2 row-cols-md-4">
+                <div class="col text-center h5 client-logo-item">TECH.CORP</div>
+                <div class="col text-center h5 client-logo-item">DATA.SYSTEMS</div>
+                <div class="col text-center h5 client-logo-item">GLOBAL.AI</div>
+                <div class="col text-center h5 client-logo-item">RETAIL.PRO</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Philosophy -->
+    <section class="section-padding bg-section-white">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 animate-fade-up">
+                    <h6 class="text-secondary fw-bold text-uppercase mb-3" style="letter-spacing: 2px;">Core Philosophy</h6>
+                    <h2 class="display-5 mb-4 text-start">Driving Value Through <br><span class="text-secondary">Mathematical Precision</span></h2>
+                    <p class="mb-5 lead text-muted">In the modern enterprise, data is the most valuable asset. But without the right architecture, it remains untapped potential.</p>
+                    
+                    <div class="row g-4">
+                        <div class="col-sm-6 text-center">
+                            <div class="feature-box-circle mx-auto">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                            <h5>Security First</h5>
+                            <p class="small text-muted">Compliant with global data protection standards (GDPR, HIPAA).</p>
+                        </div>
+                        <div class="col-sm-6 text-center">
+                            <div class="feature-box-circle mx-auto">
+                                <i class="bi bi-lightning-charge"></i>
+                            </div>
+                            <h5>Scalable Solutions</h5>
+                            <p class="small text-muted">Architectures designed to grow with your data volume seamlessly.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 animate-fade-up">
+                    <div class="position-relative">
+                        <img src="assets/images/service_ml.png" alt="Data Intelligence" class="img-fluid rounded-4 shadow-lg">
+                        <div class="position-absolute bottom-0 end-0 p-4 bg-secondary text-white rounded-start-4 d-none d-md-block">
+                            <h3 class="mb-0 text-white">10+</h3>
+                            <p class="small mb-0">Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enterprise Solutions -->
+    <section id="solutions" class="section-padding bg-light-subtle">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center animate-fade-up">
+                    <h2 class="display-5">Enterprise Solutions</h2>
+                    <p class="text-muted">Tailored data strategies designed to solve complex business challenges at scale for global organizations.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 animate-fade-up">
+                    <div class="card-custom enterprise-card text-center p-5">
+                        <div class="feature-box-circle mx-auto">
+                            <i class="bi bi-cpu-fill"></i>
+                        </div>
+                        <h4 class="mb-3">AI Strategy</h4>
+                        <p class="text-muted mb-4 text-start">Identifying high-impact AI opportunities and developing long-term implementation roadmaps for leadership.</p>
+                        <ul class="list-unstyled small text-muted text-start border-top pt-3">
+                            <li class="mb-2"><i class="bi bi-check2 text-secondary me-2"></i> Opportunity Assessment</li>
+                            <li><i class="bi bi-check2 text-secondary me-2"></i> Feasibility Analysis</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 animate-fade-up" style="animation-delay: 0.1s;">
+                    <div class="card-custom enterprise-card text-center p-5">
+                        <div class="feature-box-circle mx-auto">
+                            <i class="bi bi-layers-half"></i>
+                        </div>
+                        <h4 class="mb-3">Infrastructure</h4>
+                        <p class="text-muted mb-4 text-start">Designing robust, distributed data architectures that handle petabyte-scale processing with ease and reliability.</p>
+                        <ul class="list-unstyled small text-muted text-start border-top pt-3">
+                            <li class="mb-2"><i class="bi bi-check2 text-secondary me-2"></i> Data Lake Architecture</li>
+                            <li><i class="bi bi-check2 text-secondary me-2"></i> Cloud Migration</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 animate-fade-up" style="animation-delay: 0.2s;">
+                    <div class="card-custom enterprise-card text-center p-5">
+                        <div class="feature-box-circle mx-auto">
+                            <i class="bi bi-graph-up"></i>
+                        </div>
+                        <h4 class="mb-3">Predictive Modeling</h4>
+                        <p class="text-muted mb-4 text-start">Building custom ML models that forecast demand, optimize pricing strategies, and significantly reduce operational churn.</p>
+                        <ul class="list-unstyled small text-muted text-start border-top pt-3">
+                            <li class="mb-2"><i class="bi bi-check2 text-secondary me-2"></i> Revenue Forecasting</li>
+                            <li><i class="bi bi-check2 text-secondary me-2"></i> Customer Lifetime Value</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Story -->
+    <section id="case-studies" class="section-padding bg-section-white">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h6 class="success-story-label text-secondary fw-bold text-uppercase mb-3">Success Story</h6>
+                    <h2 class="success-story-title display-3 mb-4 text-center">Optimizing Logistics for a <br>Global Supply Chain</h2>
+                    <p class="lead text-muted mb-5 mx-auto col-lg-10">We implemented a real-time predictive analytics engine that reduced shipping delays by 40% and saved over $2M in annual operational costs.</p>
+                    
+                    <div class="row g-4 mb-5 justify-content-center">
+                        <div class="col-md-5">
+                            <div class="success-story-stat">
+                                <h2 class="text-secondary mb-2 text-center">40%</h2>
+                                <p class="mb-0 fw-medium text-center">Reduction in Delays</p>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="success-story-stat">
+                                <h2 class="text-secondary mb-2 text-center">$2M+</h2>
+                                <p class="mb-0 fw-medium text-center">Annual Savings</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="blog-details.html" class="btn btn-outline-custom py-2 px-4">Read Full Case Study</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engagement Process -->
+    <section id="process" class="section-padding bg-dark text-white">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center animate-fade-up">
+                    <h2 class="display-5 text-white">The Engagement Process</h2>
+                    <p class="text-muted process-intro">A structured, four-phase approach to delivering enterprise-grade data intelligence.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3 animate-fade-up">
+                    <div class="p-5 border border-secondary border-opacity-25 rounded-4 h-100 text-center bg-white bg-opacity-5">
+                        <div class="display-6 fw-bold text-secondary mb-3 process-step-number">01</div>
+                        <h5 class="text-white">Consult</h5>
+                        <p class="small text-muted">Deep dive into your business objectives and data landscape.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 animate-fade-up" style="animation-delay: 0.1s;">
+                    <div class="p-5 border border-secondary border-opacity-25 rounded-4 h-100 text-center bg-white bg-opacity-5">
+                        <div class="display-6 fw-bold text-secondary mb-3 process-step-number">02</div>
+                        <h5 class="text-white">Audit</h5>
+                        <p class="small text-muted">Comprehensive data quality and infrastructure assessment.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 animate-fade-up" style="animation-delay: 0.2s;">
+                    <div class="p-5 border border-secondary border-opacity-25 rounded-4 h-100 text-center bg-white bg-opacity-5">
+                        <div class="display-6 fw-bold text-secondary mb-3 process-step-number">03</div>
+                        <h5 class="text-white">Build</h5>
+                        <p class="small text-muted">Iterative development of production-grade models and pipelines.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 animate-fade-up" style="animation-delay: 0.3s;">
+                    <div class="p-5 border border-secondary border-opacity-25 rounded-4 h-100 text-center bg-white bg-opacity-5">
+                        <div class="display-6 fw-bold text-secondary mb-3 process-step-number">04</div>
+                        <h5 class="text-white">Scale</h5>
+                        <p class="small text-muted">Deploying reliable solutions and optimizing for peak performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enterprise CTA -->
+    <section id="enterprise-cta" class="section-padding bg-theme-header">
+        <div class="container text-center">
+            <h2 class="display-4 mb-4">Ready to Modernize Your Data Strategy?</h2>
+            <p class="lead mb-5 text-muted mx-auto" style="max-width: 800px;">Join the ranks of leading enterprises leveraging data to win. Book a Discovery Call today to discuss your vision.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="contact.html" class="btn-custom btn-primary-custom px-5">Book a Call</a>
+                <a href="about.html" class="btn-custom btn-outline-custom">Our Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Operations Map Section -->
+    <section id="global-map" class="section-padding bg-dark pb-0 overflow-hidden">
+        <div class="container text-center mb-5">
+            <h2 class="display-5 text-white">Global Presence</h2>
+            <p class="lead text-muted mx-auto" style="max-width: 700px;">Our data-driven solutions power enterprises across 4 continents, ensuring seamless global operations and real-time intelligence.</p>
+        </div>
+        <div class="container pb-5">
+            <div class="global-presence-frame position-relative mx-auto">
+                <img src="assets/images/global-data-map-v2.png" alt="Global data operations map with connected enterprise regions" class="global-presence-image">
+                <div class="global-presence-overlay">
+                    <span class="global-presence-kicker">Realtime Network Intelligence</span>
+                    <h3 class="text-white mb-3">Enterprise analytics infrastructure built for distributed teams.</h3>
+                    <p class="mb-0">From forecasting to operational monitoring, every deployment is designed to support always-on decision making across global markets.</p>
+                </div>
+                <div class="global-presence-badges">
+                    <div class="global-presence-badge">
+                        <strong>4 Continents</strong>
+                        <span>Active delivery footprint</span>
+                    </div>
+                    <div class="global-presence-badge">
+                        <strong>24/7 Visibility</strong>
+                        <span>Live performance intelligence</span>
+                    </div>
+                    <div class="global-presence-badge">
+                        <strong>Enterprise Ready</strong>
+                        <span>Secure, scalable data systems</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section-padding text-light" style="background-color: var(--footer-bg);">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a class="navbar-brand text-secondary fs-3 mb-4 d-block" href="index.html"><i class="bi bi-graph-up-arrow me-2"></i>ALEX.DATA</a>
+                    <p class="text-muted mb-4">Empowering businesses with data-driven intelligence and predictive excellence.</p>
+                    <div class="social-links d-flex gap-3">
+                        <a href="#" class="text-light fs-4"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-light fs-4"><i class="bi bi-github"></i></a>
+                        <a href="#" class="text-light fs-4"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-muted">About Me</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-muted">Services</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-muted">Blog</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-muted">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-4">Contact Info</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i> hello@alexdata.io</li>
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> Remote / Global</li>
+                        <li class="mb-2"><i class="bi bi-calendar-event me-2"></i> Mon - Fri, 9am - 5pm</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <form class="needs-validation" novalidate>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control form-control-theme" placeholder="Email" required aria-label="Email address">
+                            <button class="btn btn-primary-custom" type="submit">Join</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-5 border-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-muted mb-0">&copy; 2026 Alex Data. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="text-muted mb-0">Designed by Antigravity</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

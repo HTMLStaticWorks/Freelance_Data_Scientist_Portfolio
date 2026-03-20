@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Dashboard | Alex Data science</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <style>
+        .sidebar { min-height: 100vh; background: var(--navbar-bg); border-right: 1px solid var(--secondary-color); }
+        .sidebar .nav-link { color: var(--text-muted); padding: 1rem 1.5rem; transition: 0.3s; }
+        .sidebar .nav-link:hover, .sidebar .nav-link.active { color: var(--secondary-color); background: rgba(100, 255, 218, 0.05); }
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-3 col-lg-2 d-md-block sidebar collapse p-0">
+                <div class="p-4 mb-4">
+                    <a class="navbar-brand text-secondary fs-4" href="index.html">
+                        <i class="bi bi-graph-up-arrow me-2"></i>ALEX.DATA
+                    </a>
+                </div>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link active" href="#"><i class="bi bi-speedometer2 me-2"></i> Overview</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-folder2 me-2"></i> My Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-chat-dots me-2"></i> Messages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-file-earmark-arrow-down me-2"></i> Documents</a></li>
+                    <li class="nav-item mt-5"><a class="nav-link text-danger" href="login.html"><i class="bi bi-box-arrow-left me-2"></i> Logout</a></li>
+                </ul>
+            </nav>
+
+            <!-- Main Content -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom border-secondary">
+                    <h1 class="h2">Project Overview</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <button type="button" class="btn btn-sm btn-outline-secondary me-2">Share</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Export Data</button>
+                    </div>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="card-custom">
+                            <span class="text-muted small">Active Models</span>
+                            <h3 class="mt-2 text-secondary">3</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-custom">
+                            <span class="text-muted small">Accuracy Status</span>
+                            <h3 class="mt-2 text-secondary">94.2%</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-custom">
+                            <span class="text-muted small">Next Milestone</span>
+                            <h3 class="mt-2 text-secondary">Oct 12</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5">
+                    <h4>Recent Activity</h4>
+                    <div class="card-custom mt-3">
+                        <div class="table-responsive">
+                            <table class="table table-hover mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>Project</th>
+                                        <th>Date</th>
+                                        <th>Action</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Churn Prediction</td>
+                                        <td>Oct 05, 2025</td>
+                                        <td>Hyperparameter Tuning</td>
+                                        <td><span class="badge bg-success-subtle text-success">Done</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Supply Chain BI</td>
+                                        <td>Oct 08, 2025</td>
+                                        <td>API Integration</td>
+                                        <td><span class="badge bg-warning-subtle text-warning">In Progress</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="section-padding text-light" style="background-color: var(--footer-bg);">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a class="navbar-brand text-secondary fs-3 mb-4 d-block" href="index.html"><i class="bi bi-graph-up-arrow me-2"></i>ALEX.DATA</a>
+                    <p class="text-muted mb-4">Empowering businesses with data-driven intelligence and predictive excellence.</p>
+                    <div class="social-links d-flex gap-3">
+                        <a href="#" class="text-light fs-4"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-light fs-4"><i class="bi bi-github"></i></a>
+                        <a href="#" class="text-light fs-4"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-muted">About Me</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-muted">Services</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-muted">Blog</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-muted">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-4">Contact Info</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i> hello@alexdata.io</li>
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> Remote / Global</li>
+                        <li class="mb-2"><i class="bi bi-calendar-event me-2"></i> Mon - Fri, 9am - 5pm</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <form class="needs-validation" novalidate>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control form-control-theme" placeholder="Email" required aria-label="Email address">
+                            <button class="btn btn-primary-custom" type="submit">Join</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-5 border-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-muted mb-0">&copy; 2026 Alex Data. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="text-muted mb-0">Designed by Antigravity</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

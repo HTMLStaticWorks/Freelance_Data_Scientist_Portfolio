@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Data | Freelance Data Scientist & ML Engineer</title>
+    <meta name="description" content="Senior Freelance Data Scientist specializing in Machine Learning, Predictive Analytics, and Data Visualization. Turning complex data into actionable insights.">
+    <meta name="keywords" content="Data Scientist, Freelance, Machine Learning, AI, Python, Tableau, Data Portfolio">
+    
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Alex Data",
+      "jobTitle": "Freelance Data Scientist",
+      "url": "https://alexdata.io",
+      "sameAs": [
+        "https://github.com/alexdata",
+        "https://linkedin.com/in/alexdata"
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-graph-up-arrow me-2"></i>ALEX.DATA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="bi bi-list text-secondary fs-1"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu border-secondary" aria-labelledby="homeDropdown">
+                            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                            <li><a class="dropdown-item" href="home2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <button id="theme-toggle" class="btn btn-link text-secondary p-0" aria-label="Toggle Dark Mode">
+                            <i class="bi bi-moon-stars fs-5"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="login.html" class="btn btn-outline-custom btn-sm py-2 px-3">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h5 class="text-secondary mb-3">Hi, my name is</h5>
+                    <h1 class="display-3 mb-4">Alex Data. <br><span class="text-secondary">I build intelligent data solutions.</span></h1>
+                    <p class="lead mb-5 text-muted">I'm a senior data scientist specializing in building (and occasionally designing) exceptional digital experiences. Currently, I'm focused on building accessible, human-centered predictive models.</p>
+                    <div class="d-flex gap-3 justify-content-center">
+                        <a href="blog.html" class="btn-custom btn-primary-custom">View Projects</a>
+                        <a href="contact.html" class="btn-custom btn-outline-custom">Work With Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats Section -->
+    <section class="section-padding bg-light-subtle">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md-3 col-6">
+                    <h2 class="text-secondary">50+</h2>
+                    <p class="mb-0">Projects Completed</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h2 class="text-secondary">100M+</h2>
+                    <p class="mb-0">Rows Analyzed</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h2 class="text-secondary">12+</h2>
+                    <p class="mb-0">Industry Awards</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h2 class="text-secondary">99%</h2>
+                    <p class="mb-0">Happy Clients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6 text-center">
+                    <h2 class="display-5">What I Do</h2>
+                    <p class="text-muted">Turning raw data into strategic business assets through advanced analytics and technical excellence.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card-custom text-center">
+                        <i class="bi bi-cpu text-secondary fs-1 mb-3"></i>
+                        <h3>Machine Learning</h3>
+                        <p class="text-muted">Building predictive models that forecast outcomes and automate decision-making processes.</p>
+                        <a href="service-details.html" class="text-secondary">Learn more <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card-custom text-center">
+                        <i class="bi bi-bar-chart-line text-secondary fs-1 mb-3"></i>
+                        <h3>BI & Visualization</h3>
+                        <p class="text-muted">Creating intuitive Tableau and PowerBI dashboards that make complex insights easy to digest.</p>
+                        <a href="service-details.html" class="text-secondary">Learn more <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card-custom text-center">
+                        <i class="bi bi-database-check text-secondary fs-1 mb-3"></i>
+                        <h3>Data Engineering</h3>
+                        <p class="text-muted">Architecting robust data pipelines and ETL processes to ensure clean, reliable data flow.</p>
+                        <a href="service-details.html" class="text-secondary">Learn more <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section id="projects" class="section-padding bg-light-subtle">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6 text-center">
+                    <h2 class="display-5">Featured Projects</h2>
+                    <p class="text-muted">Explore some of my recent work in machine learning, data engineering, and business intelligence.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-custom p-0 overflow-hidden">
+                        <img src="assets/images/service_ml.png" alt="Predictive Analytics" class="img-fluid w-100">
+                        <div class="p-4 text-center">
+                            <span class="badge bg-secondary-subtle text-secondary mb-2">Machine Learning</span>
+                            <h4>E-commerce Demand Forecasting</h4>
+                            <p class="text-muted small">Developed a time-series model that improved inventory accuracy by 25% for a global retailer.</p>
+                            <a href="blog-details.html" class="text-secondary fw-bold">View Case Study <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-custom p-0 overflow-hidden">
+                        <img src="assets/images/service_bi.png" alt="Real-time Dashboard" class="img-fluid w-100">
+                        <div class="p-4 text-center">
+                            <span class="badge bg-secondary-subtle text-secondary mb-2">BI & Visualization</span>
+                            <h4>Executive Performance Hub</h4>
+                            <p class="text-muted small">Built a real-time Tableau dashboard consolidating data from 12 separate sources for C-level insights.</p>
+                            <a href="blog-details.html" class="text-secondary fw-bold">View Case Study <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-custom p-0 overflow-hidden">
+                        <img src="assets/images/service_eng.png" alt="Data Pipeline" class="img-fluid w-100">
+                        <div class="p-4 text-center">
+                            <span class="badge bg-secondary-subtle text-secondary mb-2">Data Engineering</span>
+                            <h4>Scalable ETL Infrastructure</h4>
+                            <p class="text-muted small">Architected a cloud-native pipeline handling 50TB+ of daily log data with sub-second latency.</p>
+                            <a href="blog-details.html" class="text-secondary fw-bold">View Case Study <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="blog.html" class="btn btn-outline-custom">View All Projects</a>
+            </div>
+        </div>
+    </section>
+    <!-- Success Story -->
+    <section class="success-story-section section-padding">
+        <div class="container">
+            <div class="success-story-shell">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-7">
+                        <div class="success-story-copy">
+                            <span class="success-story-label">Success Story</span>
+                            <h2 class="success-story-title display-3 text-start">Optimizing Logistics for a Global Supply Chain</h2>
+                            <p class="lead success-story-description">We implemented a real-time predictive analytics engine that reduced shipping delays by 40% and saved over $2M in annual operational costs.</p>
+                            <div class="success-story-highlights">
+                                <div class="success-story-point">
+                                    <i class="bi bi-broadcast-pin"></i>
+                                    <span>Live route monitoring across distributed fulfillment networks.</span>
+                                </div>
+                                <div class="success-story-point">
+                                    <i class="bi bi-graph-up-arrow"></i>
+                                    <span>Forecasting models aligned inventory, shipping, and demand planning.</span>
+                                </div>
+                            </div>
+                            <a href="blog-details.html" class="btn btn-primary-custom px-4 py-2">Read Full Case Study</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="success-story-panel">
+                            <div class="success-story-panel-header">
+                                <span class="success-story-chip">Global Operations</span>
+                                <span class="success-story-chip">Predictive Analytics</span>
+                            </div>
+                            <div class="success-story-stats">
+                                <div class="success-story-stat-card">
+                                    <h3>40%</h3>
+                                    <p>Reduction in shipping delays after rollout.</p>
+                                </div>
+                                <div class="success-story-stat-card">
+                                    <h3>$2M+</h3>
+                                    <p>Annual operational savings unlocked.</p>
+                                </div>
+                                <div class="success-story-stat-card success-story-stat-card-wide">
+                                    <h4>Outcome</h4>
+                                    <p>A faster, more resilient logistics system with clearer forecasting and better executive visibility.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Engagement Process -->
+    <section class="engagement-section">
+        <div class="container text-center">
+            <div class="engagement-header">
+                <h2 class="display-5">The Engagement Process</h2>
+                <p>A structured, four-phase approach to delivering enterprise-grade data intelligence.</p>
+            </div>
+            <div class="row g-4 mt-2">
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-card">
+                        <div class="process-number-circle">01</div>
+                        <h4>Consult</h4>
+                        <p>Deep dive into your business objectives and data landscape.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-card">
+                        <div class="process-number-circle">02</div>
+                        <h4>Audit</h4>
+                        <p>Comprehensive data quality and infrastructure assessment.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-card">
+                        <div class="process-number-circle">03</div>
+                        <h4>Build</h4>
+                        <p>Iterative development of production-grade models and pipelines.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-card">
+                        <div class="process-number-circle">04</div>
+                        <h4>Scale</h4>
+                        <p>Deploying reliable solutions and optimizing for peak performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Tools -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6 text-center">
+                    <h2 class="display-5">Skills & Tools</h2>
+                    <p class="text-muted">A comprehensive toolkit for tackling complex data challenges and building intelligent systems.</p>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center text-center">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-custom">
+                        <i class="bi bi-code-slash text-secondary fs-1 mb-3"></i>
+                        <h5>Python & R</h5>
+                        <p class="small text-muted mb-0">Primary languages for data analysis.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-custom">
+                        <i class="bi bi-diagram-3 text-secondary fs-1 mb-3"></i>
+                        <h5>TensorFlow</h5>
+                        <p class="small text-muted mb-0">Deep learning frameworks.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-custom">
+                        <i class="bi bi-database text-secondary fs-1 mb-3"></i>
+                        <h5>SQL & NoSQL</h5>
+                        <p class="small text-muted mb-0">Postgres, MongoDB, BigQuery.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-custom">
+                        <i class="bi bi-cloud-arrow-up text-secondary fs-1 mb-3"></i>
+                        <h5>AWS & Azure</h5>
+                        <p class="small text-muted mb-0">Cloud infrastructure & MLOps.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section-padding bg-light-subtle">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6 text-center">
+                    <h2 class="display-5">Client Reviews</h2>
+                    <p class="text-muted">Trusted by industry leaders to deliver data-driven excellence.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card-custom text-center">
+                        <div class="text-secondary mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        <p class="mb-4">"Alex's ability to simplify complex data is unmatched. The predictive models built for us saved hundreds of thousands."</p>
+                         <div class="d-flex flex-column align-items-center">
+                            <div class="avatar-wrapper mb-3">
+                                <img src="assets/images/avatar_john.png" alt="John Smith" class="testimonial-avatar">
+                            </div>
+                            <div class="testimonial-info">
+                                <h6 class="mb-0 fw-bold text-heading">John Smith</h6>
+                                <small class="text-muted">CTO, RetailFlow</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card-custom text-center">
+                        <div class="text-secondary mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        <p class="mb-4">"The data dashboards transformed how we make decisions. We now have a clear, real-time view of operations."</p>
+                         <div class="d-flex flex-column align-items-center">
+                            <div class="avatar-wrapper mb-3">
+                                <img src="assets/images/avatar_alice.png" alt="Alice Reed" class="testimonial-avatar">
+                            </div>
+                            <div class="testimonial-info">
+                                <h6 class="mb-0 fw-bold text-heading">Alice Reed</h6>
+                                <small class="text-muted">COO, Global Tech</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card-custom text-center">
+                        <div class="text-secondary mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></div>
+                        <p class="mb-4">"Alex is a strategic partner. The ETL pipeline is robust, scalable, and incredibly efficient. Highly recommended!"</p>
+                         <div class="d-flex flex-column align-items-center">
+                            <div class="avatar-wrapper mb-3">
+                                <img src="assets/images/avatar_mark.png" alt="Mark Philips" class="testimonial-avatar">
+                            </div>
+                            <div class="testimonial-info">
+                                <h6 class="mb-0 fw-bold text-heading">Mark Philips</h6>
+                                <small class="text-muted">VPE, DataSpark</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta" class="section-padding text-center">
+        <div class="container">
+            <div class="cta-shell mx-auto">
+            <h2 class="display-4 mb-4">Ready to Unlock Your Data's Potential?</h2>
+            <p class="lead mb-5 opacity-75">Let's build something intelligent together. Whether it's a predictive model or a custom dashboard, I'm here to help.</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="contact.html" class="btn-custom btn-primary-custom">Start a Project</a>
+                <a href="services.html" class="btn-custom btn-outline-custom">Explore Services</a>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="section-padding text-light" style="background-color: var(--footer-bg);">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a class="navbar-brand text-secondary fs-3 mb-4 d-block" href="index.html"><i class="bi bi-graph-up-arrow me-2"></i>ALEX.DATA</a>
+                    <p class="text-muted mb-4">Empowering businesses with data-driven intelligence and predictive excellence.</p>
+                    <div class="social-links d-flex gap-3">
+                        <a href="#" class="text-light fs-4"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-light fs-4"><i class="bi bi-github"></i></a>
+                        <a href="#" class="text-light fs-4"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-muted">About Me</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-muted">Services</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-muted">Blog</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-muted">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-4">Contact Info</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i> hello@alexdata.io</li>
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> Remote / Global</li>
+                        <li class="mb-2"><i class="bi bi-calendar-event me-2"></i> Mon - Fri, 9am - 5pm</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <form class="needs-validation" novalidate>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control form-control-theme" placeholder="Email" required aria-label="Email address">
+                            <button class="btn btn-primary-custom" type="submit">Join</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-5 border-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-muted mb-0">&copy; 2026 Alex Data. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="text-muted mb-0">Designed by Antigravity</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

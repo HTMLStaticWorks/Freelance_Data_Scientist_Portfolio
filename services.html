@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Alex Data Science</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div id="preloader"><div class="spinner"></div></div>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-graph-up-arrow me-2"></i>ALEX.DATA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="bi bi-list text-secondary fs-1"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu border-secondary" aria-labelledby="homeDropdown">
+                            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                            <li><a class="dropdown-item" href="home2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <button id="theme-toggle" class="btn btn-link text-secondary p-0" aria-label="Toggle Dark Mode">
+                            <i class="bi bi-moon-stars fs-5"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="login.html" class="btn btn-outline-custom btn-sm py-2 px-3">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="section-padding bg-theme-header text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Data Solutions</h1>
+            <p class="lead text-muted">Specialized services tailored to your business data needs.</p>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <!-- Machine Learning -->
+            <div class="row align-items-center mb-5 g-5">
+                <div class="col-lg-6">
+                    <img src="assets/images/service_ml.png" alt="Machine Learning" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6 text-center">
+                    <span class="text-secondary fw-bold mb-2 d-block">AI & AUTOMATION</span>
+                    <h2 class="mb-4">Advanced Machine Learning</h2>
+                    <p>I build custom predictive models that solve specific business problems. From churn prediction to recommendation engines, I use state-of-the-art algorithms to deliver accuracy and performance.</p>
+                    <ul class="list-unstyled mb-4 d-inline-block text-start">
+                        <li><i class="bi bi-check2 text-secondary me-2"></i> NLP & Sentiment Analysis</li>
+                        <li><i class="bi bi-check2 text-secondary me-2"></i> Computer Vision Solutions</li>
+                        <li><i class="bi bi-check2 text-secondary me-2"></i> Time-Series Forecasting</li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="service-details.html" class="btn-custom btn-outline-custom">View ML Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-5 opacity-10">
+
+            <!-- BI & Visualization -->
+            <div class="row align-items-center mb-5 g-5 flex-lg-row-reverse">
+                <div class="col-lg-6">
+                    <img src="assets/images/service_bi.png" alt="Business Intelligence" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6 text-center">
+                    <span class="text-secondary fw-bold mb-2 d-block">INSIGHTS & ANALYTICS</span>
+                    <h2 class="mb-4">BI & Visual Storytelling</h2>
+                    <p>Data is meaningless without a story. I create interactive executive dashboards that provide a 360-degree view of your business KPIs, enabling faster and better decisions.</p>
+                    <ul class="list-unstyled mb-4 d-inline-block text-start">
+                        <li><i class="bi bi-check2 text-secondary me-2"></i> Tableau & PowerBI Dashboards</li>
+                        <li><i class="bi bi-check2 text-secondary me-2"></i> custom D3.js Visualizations</li>
+                        <li><i class="bi bi-check2 text-secondary me-2"></i> Executive Reporting Systems</li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="service-details.html" class="btn-custom btn-outline-custom">View BI Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-5 opacity-10">
+
+            <!-- Data Engineering -->
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <img src="assets/images/service_eng.png" alt="Data Engineering" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6 text-center">
+                    <span class="text-secondary fw-bold mb-2 d-block">INFRASTRUCTURE</span>
+                    <h2 class="mb-4">Data Architecture & ETL</h2>
+                    <p>A solid model requires solid data. I architect robust pipelines that collect, clean, and store data efficiently, ensuring your analytics team always has high-quality raw material.</p>
+                    <ul class="list-unstyled mb-4 d-inline-block text-start">
+                        <li><i class="bi bi-check2 text-secondary me-2"></i> Cloud Data Warehousing</li>
+                        <li><i class="bi bi-check2 text-secondary me-2"></i> Real-time Data Streaming</li>
+                        <li><i class="bi bi-check2 text-secondary me-2"></i> Automated Data Cleaning</li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="service-details.html" class="btn-custom btn-outline-custom">View Engineering Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Service Process -->
+    <section id="process" class="section-padding bg-light-subtle">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6 text-center">
+                    <h2 class="display-5">How We Work</h2>
+                    <p class="text-muted">A streamlined, 4-step process to take your data from raw to remarkable.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-custom text-center h-100">
+                        <div class="bg-secondary-subtle text-secondary rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 70px; height: 70px;">
+                            <i class="bi bi-chat-dots fs-3"></i>
+                        </div>
+                        <h4>01. Consult</h4>
+                        <p class="small text-muted mb-0">Initial discovery session to understand your business goals and data challenges.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-custom text-center h-100">
+                        <div class="bg-secondary-subtle text-secondary rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 70px; height: 70px;">
+                            <i class="bi bi-search fs-3"></i>
+                        </div>
+                        <h4>02. Analyze</h4>
+                        <p class="small text-muted mb-0">Deep dive into your existing data infrastructure and quality assessment.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-custom text-center h-100">
+                        <div class="bg-secondary-subtle text-secondary rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 70px; height: 70px;">
+                            <i class="bi bi-gear-wide-connected fs-3"></i>
+                        </div>
+                        <h4>03. Develop</h4>
+                        <p class="small text-muted mb-0">Iterative building of custom models, pipelines, or dashboards with regular feedback.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-custom text-center h-100">
+                        <div class="bg-secondary-subtle text-secondary rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 70px; height: 70px;">
+                            <i class="bi bi-rocket-takeoff fs-3"></i>
+                        </div>
+                        <h4>04. Deploy</h4>
+                        <p class="small text-muted mb-0">Production deployment, thorough testing, and ongoing performance monitoring.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service CTA -->
+    <section id="cta" class="section-padding text-center">
+        <div class="container py-4">
+            <h2 class="display-4 mb-4">Start Your Data Journey Today</h2>
+            <p class="lead mb-5 text-muted mx-auto" style="max-width: 800px;">Ready to transform your business with data-driven intelligence? Let's discuss your requirements and build a custom solution together.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="contact.html" class="btn-custom btn-primary-custom px-5">Get a Quote</a>
+                <a href="blog.html" class="btn-custom btn-outline-custom">Our Case Studies</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section-padding text-light" style="background-color: var(--footer-bg);">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a class="navbar-brand text-secondary fs-3 mb-4 d-block" href="index.html"><i class="bi bi-graph-up-arrow me-2"></i>ALEX.DATA</a>
+                    <p class="text-muted mb-4">Empowering businesses with data-driven intelligence and predictive excellence.</p>
+                    <div class="social-links d-flex gap-3">
+                        <a href="#" class="text-light fs-4"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-light fs-4"><i class="bi bi-github"></i></a>
+                        <a href="#" class="text-light fs-4"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-muted">About Me</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-muted">Services</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-muted">Blog</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-muted">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-4">Contact Info</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i> hello@alexdata.io</li>
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> Remote / Global</li>
+                        <li class="mb-2"><i class="bi bi-calendar-event me-2"></i> Mon - Fri, 9am - 5pm</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <form class="needs-validation" novalidate>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control form-control-theme" placeholder="Email" required aria-label="Email address">
+                            <button class="btn btn-primary-custom" type="submit">Join</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-5 border-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-muted mb-0">&copy; 2026 Alex Data. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="text-muted mb-0">Designed by Antigravity</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
