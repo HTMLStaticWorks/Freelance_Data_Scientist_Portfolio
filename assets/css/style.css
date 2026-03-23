@@ -833,15 +833,15 @@ a:hover {
 
 .auth-card {
     text-align: center;
-    max-width: 480px;
+    max-width: 420px;
     margin: 0 auto;
-    padding: var(--space-4);
+    padding: 2rem;
 }
 
 @media (min-width: 1200px) {
     .auth-card {
-        max-width: 520px;
-        padding: var(--space-5);
+        max-width: 460px;
+        padding: 2.5rem;
     }
 }
 
@@ -879,11 +879,11 @@ a:hover {
 
 /* Enhanced Auth Form Styles */
 .auth-card .form-control {
-    min-height: 52px;
-    padding: 14px 16px;
-    font-size: 1rem;
-    border-radius: 8px;
-    border: 2px solid var(--border-color);
+    min-height: 46px;
+    padding: 12px 14px;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
     transition: var(--transition-fast);
 }
 
@@ -911,11 +911,11 @@ a:hover {
 /* Enhanced Auth Button Styles */
 .auth-card .btn-custom,
 .auth-card .btn {
-    min-height: 50px;
-    padding: 14px 24px;
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: 8px;
+    min-height: 36px;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border-radius: 6px;
     transition: var(--transition-fast);
 }
 
@@ -923,9 +923,8 @@ a:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     border: 1px solid var(--secondary-color);
-    font-size: 1.05rem;
-    font-weight: 700;
-    letter-spacing: 0.02em;
+    font-size: 0.85rem;
+    font-weight: 600;
 }
 
 [data-theme="light"] .auth-card .btn-primary-custom {
@@ -941,10 +940,10 @@ a:hover {
 }
 
 .auth-card .auth-social-btn {
-    min-height: 52px;
-    padding: 14px 20px;
-    font-size: 0.98rem;
-    font-weight: 600;
+    min-height: 36px;
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 
 .auth-card .btn-google-custom:hover,
@@ -1514,13 +1513,12 @@ footer h1, footer h2, footer h3, footer h4, footer h5, footer h6,
 }
 
 .core-philosophy-badge {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    position: relative;
+    margin: 1rem auto 0;
     min-width: 170px;
     max-width: 240px;
     padding: 1.25rem 1.5rem;
-    border-radius: 24px 0 24px 24px;
+    border-radius: 24px;
     background: linear-gradient(135deg, rgba(100, 116, 139, 0.96), rgba(71, 85, 105, 0.96));
     color: #ffffff;
     text-align: center;
@@ -1557,8 +1555,7 @@ footer h1, footer h2, footer h3, footer h4, footer h5, footer h6,
     }
 
     .core-philosophy-badge {
-        right: 12px;
-        bottom: 12px;
+        margin: 1rem auto 0;
     }
 }
 
@@ -1572,10 +1569,10 @@ footer h1, footer h2, footer h3, footer h4, footer h5, footer h6,
     }
 
     .core-philosophy-badge {
-        position: static;
+        position: relative;
         width: min(100%, 240px);
         max-width: 100%;
-        border-radius: 20px;
+        margin: 0 auto;
     }
 }
 
