@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -131,7 +131,9 @@
             <div class="row g-4">
                 <div class="col-lg-4">
                     <div class="card-custom text-center service-card">
-                        <i class="bi bi-cpu text-secondary fs-1 mb-3"></i>
+                        <div class="service-card-image-wrap mb-4">
+                            <img src="assets/images/service-ml-new.png" alt="Machine Learning" class="service-card-img">
+                        </div>
                         <h3>Machine Learning</h3>
                         <p class="text-muted">Building predictive models that forecast outcomes and automate decision-making processes.</p>
                         <a href="service-details.html" class="text-secondary">Learn more <i class="bi bi-arrow-right"></i></a>
@@ -139,7 +141,9 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="card-custom text-center service-card">
-                        <i class="bi bi-bar-chart-line text-secondary fs-1 mb-3"></i>
+                        <div class="service-card-image-wrap mb-4">
+                            <img src="assets/images/service-bi-new.png" alt="BI & Visualization" class="service-card-img">
+                        </div>
                         <h3>BI & Visualization</h3>
                         <p class="text-muted">Creating intuitive Tableau and PowerBI dashboards that make complex insights easy to digest.</p>
                         <a href="service-details.html" class="text-secondary">Learn more <i class="bi bi-arrow-right"></i></a>
@@ -147,7 +151,9 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="card-custom text-center service-card">
-                        <i class="bi bi-database-check text-secondary fs-1 mb-3"></i>
+                        <div class="service-card-image-wrap mb-4">
+                            <img src="assets/images/service-data-new.png" alt="Data Engineering" class="service-card-img">
+                        </div>
                         <h3>Data Engineering</h3>
                         <p class="text-muted">Architecting robust data pipelines and ETL processes to ensure clean, reliable data flow.</p>
                         <a href="service-details.html" class="text-secondary">Learn more <i class="bi bi-arrow-right"></i></a>
@@ -457,12 +463,16 @@
                     <p class="text-muted mb-0">&copy; 2026 Alex Data. All Rights Reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <p class="text-muted mb-0">Designed by Antigravity</p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-md-end">
+                        <a href="#" class="text-muted text-decoration-none small">Service Policy</a>
+                        <a href="#" class="text-muted text-decoration-none small">Terms of Service</a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
 
+    
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>

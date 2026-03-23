@@ -114,6 +114,72 @@ body > footer {
     text-align: right;
 }
 
+[dir="rtl"] .site-nav-actions {
+    margin-right: auto;
+    margin-left: unset;
+}
+
+[dir="rtl"] .contact-hero-copy h1,
+[dir="rtl"] .contact-hero-copy p,
+[dir="rtl"] .contact-hero-insight-item,
+[dir="rtl"] .global-presence-overlay,
+[dir="rtl"] .global-presence-overlay h3,
+[dir="rtl"] .global-presence-overlay p,
+[dir="rtl"] .global-presence-overlay h3,
+[dir="rtl"] .success-story-title,
+[dir="rtl"] .success-story-description,
+[dir="rtl"] .success-story-point,
+[dir="rtl"] .success-story-stat-card h3,
+[dir="rtl"] .success-story-stat-card h4,
+[dir="rtl"] .success-story-stat-card p {
+    text-align: right;
+}
+
+[dir="rtl"] .contact-hero-insight-item i {
+    margin-left: 14px;
+    margin-right: 0;
+}
+
+[dir="rtl"] footer .list-unstyled a.text-muted {
+    margin-right: -0.45rem;
+    margin-left: 0;
+}
+
+[dir="rtl"] .global-presence-overlay {
+    right: 0;
+    left: auto;
+}
+
+[dir="rtl"] .global-presence-badges {
+    left: 32px;
+    right: auto;
+}
+
+[dir="rtl"] .success-story-panel::after {
+    inset: auto auto -70px -40px;
+}
+
+[dir="rtl"] .core-philosophy-visual {
+    padding: 0 28px 28px 0;
+}
+
+@media (max-width: 991px) {
+    [dir="rtl"] .global-presence-badges {
+        left: 20px;
+        right: auto;
+    }
+    [dir="rtl"] .core-philosophy-visual {
+        padding: 0 24px 24px 0;
+    }
+}
+
+@media (max-width: 575px) {
+    [dir="rtl"] .global-presence-badges {
+        left: 16px;
+        right: auto;
+    }
+}
+
 /* Global Typography */
 h1, h2, h3 {
     text-align: center;
@@ -198,6 +264,18 @@ a:hover {
     padding: var(--space-3);
     transition: var(--transition-slow);
     height: 100%;
+}
+
+.badge-category {
+    background-color: var(--secondary-color) !important;
+    color: var(--primary-color) !important;
+    font-weight: 700;
+    padding: 0.5em 0.8em;
+    letter-spacing: 0.02em;
+}
+
+[data-theme="light"] .badge-category {
+    color: #ffffff !important;
 }
 
 .card-custom:hover {
@@ -833,14 +911,14 @@ a:hover {
 
 .auth-card {
     text-align: center;
-    max-width: 420px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 2rem;
 }
 
 @media (min-width: 1200px) {
     .auth-card {
-        max-width: 460px;
+        max-width: 560px;
         padding: 2.5rem;
     }
 }
@@ -1462,6 +1540,59 @@ footer h1, footer h2, footer h3, footer h4, footer h5, footer h6,
     .success-story-stats {
         grid-template-columns: 1fr;
     }
+}
+
+/* Home 1 Service Card Images */
+.service-card-image-wrap {
+    height: 160px;
+    margin: -1.5rem -1.5rem 1.5rem -1.5rem;
+    overflow: hidden;
+    border-radius: 12px 12px 0 0;
+}
+
+.service-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.service-card:hover .service-card-img {
+    transform: scale(1.1);
+}
+
+.enterprise-card .service-card-image-wrap {
+    margin: -3rem -3rem 2rem -3rem;
+}
+
+/* Home 2 Global Map Enhancement */
+.global-map-wrapper {
+    max-height: 600px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.global-map-img {
+    opacity: 0.6;
+    filter: brightness(0.7) blue-tint(20%); /* Conceptual tint */
+    object-fit: contain;
+}
+
+.global-map-overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+    z-index: 2;
+}
+
+.global-map-overlay-content h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 #case-studies .success-story-label {

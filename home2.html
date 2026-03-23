@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -125,8 +125,8 @@
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 animate-fade-up">
                     <div class="card-custom enterprise-card text-center p-5">
-                        <div class="feature-box-circle mx-auto">
-                            <i class="bi bi-cpu-fill"></i>
+                        <div class="service-card-image-wrap mb-4">
+                            <img src="assets/images/service-ai-strat.png" alt="AI Strategy" class="service-card-img">
                         </div>
                         <h4 class="mb-3">AI Strategy</h4>
                         <p class="text-muted mb-4 text-start">Identifying high-impact AI opportunities and developing long-term implementation roadmaps for leadership.</p>
@@ -138,8 +138,8 @@
                 </div>
                 <div class="col-lg-4 col-md-6 animate-fade-up" style="animation-delay: 0.1s;">
                     <div class="card-custom enterprise-card text-center p-5">
-                        <div class="feature-box-circle mx-auto">
-                            <i class="bi bi-layers-half"></i>
+                        <div class="service-card-image-wrap mb-4">
+                            <img src="assets/images/service-infra.png" alt="Infrastructure" class="service-card-img">
                         </div>
                         <h4 class="mb-3">Infrastructure</h4>
                         <p class="text-muted mb-4 text-start">Designing robust, distributed data architectures that handle petabyte-scale processing with ease and reliability.</p>
@@ -151,8 +151,8 @@
                 </div>
                 <div class="col-lg-4 col-md-6 animate-fade-up" style="animation-delay: 0.2s;">
                     <div class="card-custom enterprise-card text-center p-5">
-                        <div class="feature-box-circle mx-auto">
-                            <i class="bi bi-graph-up"></i>
+                        <div class="service-card-image-wrap mb-4">
+                            <img src="assets/images/service-pred-model.png" alt="Predictive Modeling" class="service-card-img">
                         </div>
                         <h4 class="mb-3">Predictive Modeling</h4>
                         <p class="text-muted mb-4 text-start">Building custom ML models that forecast demand, optimize pricing strategies, and significantly reduce operational churn.</p>
@@ -257,8 +257,13 @@
             <p class="lead text-muted mx-auto" style="max-width: 700px;">Our data-driven solutions power enterprises across 4 continents, ensuring seamless global operations and real-time intelligence.</p>
         </div>
         <div class="container-fluid p-0 mt-2">
-            <div class="position-relative" style="max-height: 500px; overflow: hidden;">
-                <img src="assets/images/global-data-map-v2.png" alt="Global Operations Map" class="w-100 h-auto" style="opacity: 0.9; filter: brightness(0.85); object-fit: contain;">
+            <div class="position-relative global-map-wrapper">
+                <img src="assets/images/global-data-map-v2.png" alt="Global Operations Map" class="w-100 h-auto global-map-img">
+                <div class="global-map-overlay-content">
+                    <h3 class="text-white mb-3">Global Data Strategy & Audits</h3>
+                    <p class="text-white-50 mb-4 mx-auto" style="max-width: 500px;">Optimizing multi-regional data flows and ensuring regulatory compliance for global enterprises.</p>
+                    <a href="contact.html" class="btn btn-primary-custom px-4 py-2">Schedule a Global Audit</a>
+                </div>
             </div>
         </div>
     </section>
@@ -309,7 +314,10 @@
                     <p class="text-muted mb-0">&copy; 2026 Alex Data. All Rights Reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <p class="text-muted mb-0">Designed by Antigravity</p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-md-end">
+                        <a href="#" class="text-muted text-decoration-none small">Service Policy</a>
+                        <a href="#" class="text-muted text-decoration-none small">Terms of Service</a>
+                    </div>
                 </div>
             </div>
         </div>
