@@ -82,6 +82,8 @@ CSS STRUCTURE
     --hero-text: #FFFFFF;
     --engagement-bg: #000000;
     --engagement-card-bg: #0b0b0b;
+    --engagement-title-text: #F8FAFC;
+    --engagement-desc-text: #CBD5E1;
 }
 
 /* 2. Reset & Base */
@@ -224,7 +226,7 @@ a:hover {
     padding: 0.45rem 0.75rem;
     border: 1px solid rgba(100, 255, 218, 0.35);
     background-color: rgba(100, 255, 218, 0.18);
-    color: #d8fff7 !important;
+    color: #087f6b !important;
     font-weight: 700;
     letter-spacing: 0.02em;
 }
@@ -831,6 +833,16 @@ a:hover {
 
 .auth-card {
     text-align: center;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: var(--space-4);
+}
+
+@media (min-width: 1200px) {
+    .auth-card {
+        max-width: 520px;
+        padding: var(--space-5);
+    }
 }
 
 .auth-brand {
@@ -849,12 +861,96 @@ a:hover {
     max-width: 960px;
 }
 
+.auth-main {
+    background: linear-gradient(135deg, rgba(242, 247, 252, 0.4), rgba(226, 232, 240, 0.2));
+}
+
+[data-theme="dark"] .auth-main {
+    background: linear-gradient(135deg, rgba(10, 25, 47, 0.6), rgba(2, 12, 27, 0.4));
+}
+
 .auth-link {
     transition: var(--transition-fast);
 }
 
 .auth-link:hover {
     color: var(--accent-color) !important;
+}
+
+/* Enhanced Auth Form Styles */
+.auth-card .form-control {
+    min-height: 52px;
+    padding: 14px 16px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 2px solid var(--border-color);
+    transition: var(--transition-fast);
+}
+
+.auth-card .form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 4px rgba(0, 139, 114, 0.1);
+}
+
+.auth-card .form-label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    color: var(--heading-color);
+}
+
+.auth-card .login-divider {
+    margin: 28px 0 24px;
+}
+
+.auth-card .login-divider span {
+    background: var(--card-bg);
+    padding: 0 20px;
+}
+
+/* Enhanced Auth Button Styles */
+.auth-card .btn-custom,
+.auth-card .btn {
+    min-height: 50px;
+    padding: 14px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: var(--transition-fast);
+}
+
+.auth-card .btn-primary-custom {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+[data-theme="light"] .auth-card .btn-primary-custom {
+    color: white !important;
+}
+
+.auth-card .btn-primary-custom:hover {
+    background-color: #006b59;
+    border-color: #006b59;
+    color: #ffffff !important;
+    box-shadow: 0 12px 24px rgba(0, 107, 89, 0.18);
+    transform: translateY(-2px);
+}
+
+.auth-card .auth-social-btn {
+    min-height: 52px;
+    padding: 14px 20px;
+    font-size: 0.98rem;
+    font-weight: 600;
+}
+
+.auth-card .btn-google-custom:hover,
+.auth-card .btn-linkedin-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 32px -20px rgba(0, 0, 0, 0.4);
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -1422,6 +1518,7 @@ footer h1, footer h2, footer h3, footer h4, footer h5, footer h6,
     right: 0;
     bottom: 0;
     min-width: 170px;
+    max-width: 240px;
     padding: 1.25rem 1.5rem;
     border-radius: 24px 0 24px 24px;
     background: linear-gradient(135deg, rgba(100, 116, 139, 0.96), rgba(71, 85, 105, 0.96));
@@ -1450,6 +1547,21 @@ footer h1, footer h2, footer h3, footer h4, footer h5, footer h6,
     box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 991px) {
+    .core-philosophy-visual {
+        padding: 0 0 24px 24px;
+    }
+
+    .core-philosophy-image {
+        width: min(100%, 460px);
+    }
+
+    .core-philosophy-badge {
+        right: 12px;
+        bottom: 12px;
+    }
+}
+
 @media (max-width: 575px) {
     .core-philosophy-visual {
         padding: 0;
@@ -1462,6 +1574,7 @@ footer h1, footer h2, footer h3, footer h4, footer h5, footer h6,
     .core-philosophy-badge {
         position: static;
         width: min(100%, 240px);
+        max-width: 100%;
         border-radius: 20px;
     }
 }
@@ -1588,7 +1701,7 @@ footer h1, footer h2, footer h3, footer h4, footer h5, footer h6,
 }
 
 .process-card p {
-    color: #64748B;
+    color: var(--engagement-desc-text);
     font-size: 0.95rem;
     line-height: 1.6;
     margin-bottom: 0;
