@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corporate Data Solutions | Alex Data science</title>
-    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
@@ -20,9 +19,9 @@
                 <span class="bi bi-list text-secondary fs-1"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto align-items-center site-nav-links">
+                <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Home
                         </a>
                         <ul class="dropdown-menu border-secondary" aria-labelledby="homeDropdown">
@@ -30,19 +29,12 @@
                             <li><a class="dropdown-item" href="home2.html">Home 2</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-                <ul class="navbar-nav align-items-center site-nav-actions">
-                    <li class="nav-item ms-lg-3 me-2">
-                        <button id="rtl-toggle" class="btn btn-link text-secondary p-0" aria-label="Toggle RTL">
-                            <i class="bi bi-translate fs-5"></i>
-                        </button>
-                    </li>
-                    <li class="nav-item">
+                    <li class="nav-item ms-lg-3">
                         <button id="theme-toggle" class="btn btn-link text-secondary p-0" aria-label="Toggle Dark Mode">
                             <i class="bi bi-moon-stars fs-5"></i>
                         </button>
@@ -111,8 +103,12 @@
                     </div>
                 </div>
                 <div class="col-lg-6 animate-fade-up">
-                    <div class="core-philosophy-visual">
-                        <img src="assets/images/service_ml.png" alt="Data Intelligence" class="core-philosophy-image rounded-4 shadow-lg">
+                    <div class="position-relative">
+                        <img src="assets/images/service_ml.png" alt="Data Intelligence" class="img-fluid rounded-4 shadow-lg">
+                        <div class="position-absolute bottom-0 end-0 p-4 bg-secondary text-white rounded-start-4 d-none d-md-block">
+                            <h3 class="mb-0 text-white">10+</h3>
+                            <p class="small mb-0">Years Experience</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -131,8 +127,8 @@
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 animate-fade-up">
                     <div class="card-custom enterprise-card text-center p-5">
-                        <div class="service-card-image-wrap mb-4">
-                            <img src="assets/images/service-ai-strat.png" alt="AI Strategy" class="service-card-img">
+                        <div class="feature-box-circle mx-auto">
+                            <i class="bi bi-cpu-fill"></i>
                         </div>
                         <h4 class="mb-3">AI Strategy</h4>
                         <p class="text-muted mb-4 text-start">Identifying high-impact AI opportunities and developing long-term implementation roadmaps for leadership.</p>
@@ -144,8 +140,8 @@
                 </div>
                 <div class="col-lg-4 col-md-6 animate-fade-up" style="animation-delay: 0.1s;">
                     <div class="card-custom enterprise-card text-center p-5">
-                        <div class="service-card-image-wrap mb-4">
-                            <img src="assets/images/service-infra.png" alt="Infrastructure" class="service-card-img">
+                        <div class="feature-box-circle mx-auto">
+                            <i class="bi bi-layers-half"></i>
                         </div>
                         <h4 class="mb-3">Infrastructure</h4>
                         <p class="text-muted mb-4 text-start">Designing robust, distributed data architectures that handle petabyte-scale processing with ease and reliability.</p>
@@ -157,8 +153,8 @@
                 </div>
                 <div class="col-lg-4 col-md-6 animate-fade-up" style="animation-delay: 0.2s;">
                     <div class="card-custom enterprise-card text-center p-5">
-                        <div class="service-card-image-wrap mb-4">
-                            <img src="assets/images/service-pred-model.png" alt="Predictive Modeling" class="service-card-img">
+                        <div class="feature-box-circle mx-auto">
+                            <i class="bi bi-graph-up"></i>
                         </div>
                         <h4 class="mb-3">Predictive Modeling</h4>
                         <p class="text-muted mb-4 text-start">Building custom ML models that forecast demand, optimize pricing strategies, and significantly reduce operational churn.</p>
@@ -263,13 +259,8 @@
             <p class="lead text-muted mx-auto" style="max-width: 700px;">Our data-driven solutions power enterprises across 4 continents, ensuring seamless global operations and real-time intelligence.</p>
         </div>
         <div class="container-fluid p-0 mt-2">
-            <div class="position-relative global-map-wrapper">
-                <img src="assets/images/global-data-map-v2.png" alt="Global Operations Map" class="w-100 h-auto global-map-img">
-                <div class="global-map-overlay-content">
-                    <h3 class="text-white mb-3">Global Data Strategy & Audits</h3>
-                    <p class="text-white-50 mb-4 mx-auto" style="max-width: 500px;">Optimizing multi-regional data flows and ensuring regulatory compliance for global enterprises.</p>
-                    <a href="contact.html" class="btn btn-primary-custom px-4 py-2">Schedule a Global Audit</a>
-                </div>
+            <div class="position-relative" style="max-height: 500px; overflow: hidden;">
+                <img src="assets/images/global-data-map-v2.png" alt="Global Operations Map" class="w-100 h-auto" style="opacity: 0.9; filter: brightness(0.85); object-fit: contain;">
             </div>
         </div>
     </section>
@@ -320,10 +311,7 @@
                     <p class="text-muted mb-0">&copy; 2026 Alex Data. All Rights Reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <div class="d-flex gap-3 justify-content-center justify-content-md-end">
-                        <a href="#" class="text-muted text-decoration-none small">Service Policy</a>
-                        <a href="#" class="text-muted text-decoration-none small">Terms of Service</a>
-                    </div>
+                    <p class="text-muted mb-0">Designed by Antigravity</p>
                 </div>
             </div>
         </div>
