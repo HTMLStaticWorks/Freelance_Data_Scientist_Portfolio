@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initActiveLinks();
     initRTLSupport();
     initAnimations();
+    initTerminal();
 });
 
 /**
@@ -136,4 +137,51 @@ function initAnimations() {
     }, { threshold: 0.1 });
 
     document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+}
+
+/**
+ * Terminal Typing Animation
+ */
+function initTerminal() {
+    const typingText = document.querySelector('.typing-text');
+    if (!typingText) return;
+
+    const phrases = [
+        "python train.py --epochs 50",
+        "dvc pull core_dataset",
+        "npm run deploy",
+        "alex_rivera.status = 'In Flow'"
+    ];
+    
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typeSpeed = 100;
+
+    function type() {
+        const currentPhrase = phrases[phraseIndex];
+        
+        if (isDeleting) {
+            typingText.textContent = currentPhrase.substring(0, charIndex - 1);
+            charIndex--;
+            typeSpeed = 50;
+        } else {
+            typingText.textContent = currentPhrase.substring(0, charIndex + 1);
+            charIndex++;
+            typeSpeed = 100;
+        }
+
+        if (!isDeleting && charIndex === currentPhrase.length) {
+            isDeleting = true;
+            typeSpeed = 1500; // Pause at end
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            phraseIndex = (phraseIndex + 1) % phrases.length;
+            typeSpeed = 500;
+        }
+
+        setTimeout(type, typeSpeed);
+    }
+
+    type();
 }
