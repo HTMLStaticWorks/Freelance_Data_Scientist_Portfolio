@@ -393,16 +393,45 @@ a:hover {
     }
 }
 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .site-nav-links {
+        position: static;
+        transform: none;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+    }
+
+    .site-nav-links .nav-item {
+        margin: 0 0.35rem;
+    }
+
+    .site-nav-actions {
+        margin-left: auto;
+    }
+}
+
 @media (max-width: 991.98px) {
     .navbar > .container {
         align-items: flex-start;
+        position: relative;
     }
 
     .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
         width: 100%;
-        margin-top: 0.75rem;
-        padding: 1rem 0 0.5rem;
-        border-top: 1px solid var(--border-color);
+        background-color: var(--navbar-bg);
+        border-bottom-left-radius: 26px;
+        border-bottom-right-radius: 26px;
+        border-top: 1px solid rgba(15, 23, 42, 0.06);
+        padding: 1rem 1.25rem;
+        box-shadow: 0 20px 40px rgba(10, 25, 47, 0.15);
+        z-index: 999;
     }
 
     .site-nav-links,
@@ -668,6 +697,24 @@ a:hover {
     justify-content: center;
 }
 
+.contact-direct-icon {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    border-radius: 50%;
+    background: #050c16;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px -20px rgba(0, 0, 0, 0.8);
+}
+
+.contact-direct-icon i {
+    color: var(--secondary-color);
+    font-size: 1.3rem;
+}
+
 .contact-hero-copy h1,
 .contact-hero-copy p {
     text-align: left;
@@ -765,6 +812,12 @@ a:hover {
     border-color: rgba(100, 255, 218, 0.12);
     background: rgba(0, 0, 0, 0.82);
     box-shadow: 0 30px 70px -40px rgba(2, 12, 27, 0.92);
+}
+
+[data-theme="dark"] .contact-direct-icon {
+    background: rgba(15, 23, 42, 0.85);
+    border-color: rgba(100, 255, 218, 0.2);
+    box-shadow: 0 14px 24px -12px rgba(0, 0, 0, 0.7);
 }
 
 [data-theme="dark"] .contact-hero-copy p.text-muted,
