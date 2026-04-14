@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initRTLSupport();
     initAnimations();
     initTerminal();
+    initNavAutoClose();
 });
 
 /**
@@ -137,6 +138,31 @@ function initAnimations() {
     }, { threshold: 0.1 });
 
     document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+}
+
+/**
+ * Auto-close Navbar on Link Click (mobile / tablet collapse view)
+ * Collapses the Bootstrap navbar whenever a nav-link or dropdown-item
+ * is clicked, but only while the hamburger toggler is visible.
+ */
+function initNavAutoClose() {
+    const navbarCollapse = document.getElementById('navbarNav');
+    const toggler = document.querySelector('.navbar-toggler');
+
+    if (!navbarCollapse || !toggler) return;
+
+    // Target all nav links AND dropdown items inside the collapse
+    const clickables = navbarCollapse.querySelectorAll('.nav-link, .dropdown-item, .btn-outline-custom, .btn-link');
+
+    clickables.forEach(link => {
+        link.addEventListener('click', () => {
+            // Only collapse when the toggler is visible (i.e., responsive / collapsed mode)
+            if (toggler.offsetParent !== null) {
+                const bsCollapse = bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
+                bsCollapse.hide();
+            }
+        });
+    });
 }
 
 /**

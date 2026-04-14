@@ -287,6 +287,89 @@ a:hover {
     box-shadow: 0 12px 24px rgba(0, 139, 114, 0.16);
 }
 
+/* ─── Circular Icon Buttons (theme toggle & RTL) ─── */
+.btn-icon-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition-fast);
+    padding: 0;
+    line-height: 1;
+    /* Light-mode default: soft gray pill */
+    background-color: #e8eaed;
+    color: #3c4043;
+    font-family: var(--font-main);
+}
+
+.btn-icon-circle:hover {
+    transform: scale(1.08);
+    background-color: #d2d5d9;
+}
+
+/* Dark-circle variant — used for the moon/theme toggle */
+.btn-icon-circle--dark {
+    background-color: #3d4452;
+    color: #e2e8ef;
+}
+
+.btn-icon-circle--dark:hover {
+    background-color: #4a5266;
+}
+
+/* Text-label variant — used for RTL button */
+.btn-icon-circle--label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background-color: #e8eaed;
+    color: #3c4043;
+}
+
+.btn-icon-circle--label:hover {
+    background-color: #d2d5d9;
+}
+
+/* Dark-mode overrides */
+[data-theme="dark"] .btn-icon-circle {
+    background-color: #1e2d40;
+    color: #ccd6f6;
+}
+
+[data-theme="dark"] .btn-icon-circle:hover {
+    background-color: #263450;
+}
+
+[data-theme="dark"] .btn-icon-circle--dark {
+    background-color: #112240;
+    color: #64FFDA;
+}
+
+[data-theme="dark"] .btn-icon-circle--dark:hover {
+    background-color: #1a3358;
+}
+
+[data-theme="dark"] .btn-icon-circle--label {
+    background-color: #1e2d40;
+    color: #ccd6f6;
+}
+
+[data-theme="dark"] .btn-icon-circle--label:hover {
+    background-color: #263450;
+    color: #ccd6f6;
+}
+
+/* Light mode — theme toggle bg matches RTL button for UI consistency */
+[data-theme="light"] #theme-toggle.btn-icon-circle--dark {
+    background-color: #e8eaed;
+    color: var(--secondary-color);
+}
+
 /* Cards */
 .card-custom {
     background-color: var(--card-bg);
