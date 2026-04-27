@@ -151,8 +151,17 @@ function initNavAutoClose() {
 
     if (!navbarCollapse || !toggler) return;
 
-    // Target all nav links AND dropdown items inside the collapse
-    const clickables = navbarCollapse.querySelectorAll('.nav-link, .dropdown-item, .btn-outline-custom, .btn-link');
+    const syncNavScrollLock = () => {
+        const isCollapsedView = toggler.offsetParent !== null;
+        const isOpen = navbarCollapse.classList.contains('show');
+
+        document.body.classList.toggle('navbar-open', isCollapsedView && isOpen);
+    };
+
+    // Target real navigation actions, but keep dropdown toggles open so users can expand them first.
+    const clickables = navbarCollapse.querySelectorAll(
+        '.nav-link:not(.dropdown-toggle), .dropdown-item, .btn-outline-custom, .btn-link'
+    );
 
     clickables.forEach(link => {
         link.addEventListener('click', () => {
@@ -163,6 +172,11 @@ function initNavAutoClose() {
             }
         });
     });
+
+    navbarCollapse.addEventListener('shown.bs.collapse', syncNavScrollLock);
+    navbarCollapse.addEventListener('hidden.bs.collapse', syncNavScrollLock);
+    window.addEventListener('resize', syncNavScrollLock);
+    syncNavScrollLock();
 }
 
 /**
